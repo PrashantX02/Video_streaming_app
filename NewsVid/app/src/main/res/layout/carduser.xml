@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    app:cardElevation="@dimen/dim_1dp"
+    app:cardCornerRadius="@dimen/dim_6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dim_170dp"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        android:layout_height="@dimen/dim_250dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/usercard"
+            android:layout_width="@dimen/dim_106dp"
+            android:layout_height="@dimen/dim_106dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/girlfashion"
+            app:civ_border_color="#FF9800"
+            app:civ_border_width="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Alya"
+
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/usercard"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/usercard"
+            app:layout_constraintTop_toBottomOf="@+id/usercard" />
+
+        <ImageView
+            android:id="@+id/genda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/textView28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_card"
+            app:srcCompat="@drawable/baseline_female_24_blue" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/gradi"
+            android:paddingLeft="@dimen/dim_28dp"
+            android:paddingTop="@dimen/dim_4dp"
+            android:paddingRight="@dimen/dim_28dp"
+            android:paddingBottom="@dimen/dim_4dp"
+            android:text="follow"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/genda"
+            app:layout_constraintStart_toStartOf="@+id/genda" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
